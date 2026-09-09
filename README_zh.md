@@ -1,3 +1,10 @@
+> [!NOTE]
+> 本仓库为个人 Fork 版本，仅供学习和测试使用。
+> 原版项目请访问：[vocoder712/OpenUtauMobile](https://github.com/vocoder712/OpenUtauMobile)
+> 
+> 此 Fork 版本可能包含实验性修改或构建配置调整，非官方发布版本。
+> 如需正式使用或获取最新更新，请前往原仓库。
+
 # OpenUtau Mobile
 [English](README.md) | [简体中文](README_zh.md)
 
