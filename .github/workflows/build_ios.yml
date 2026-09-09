@@ -3,11 +3,11 @@ name: Build iOS IPA (Unsigned)
 on:
   push:
     branches: [ master ]
-  workflow_dispatch:  # 允许手动触发
+  workflow_dispatch:
 
 jobs:
   build-ios:
-    runs-on: macos-latest  # iOS 构建必须用 macOS
+    runs-on: macos-latest
     
     steps:
       - name: 检出代码
@@ -18,13 +18,13 @@ jobs:
         with:
           dotnet-version: '9.0.x'
           
-      - name: 安装 MAUI iOS 工作负载
+      - name: 安装所有 MAUI 工作负载（安卓+iOS 一起装）
         run: |
-          dotnet workload install maui-ios
+          dotnet workload install maui
           
       - name: 还原依赖
         run: |
-          dotnet restore -p:TargetFramework=net9.0-ios
+          dotnet restore OpenUtauMobile/OpenUtauMobile.csproj
           
       - name: 编译未签名的 IPA
         run: |
@@ -36,7 +36,7 @@ jobs:
             -p:EnableCodeSigning=false \
             -p:CodeSignEntitlements=none
           
-      - name: 上传 IPA 作为构建产物
+      - name: 上传 IPA
         uses: actions/upload-artifact@v4
         with:
           name: OpenUtauMobile-iOS
