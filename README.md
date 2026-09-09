@@ -1,3 +1,10 @@
+> [!NOTE]
+> This repository is a personal fork for learning and testing purposes only.
+> Original project: [vocoder712/OpenUtauMobile](https://github.com/vocoder712/OpenUtauMobile)
+> 
+> This fork may contain experimental modifications or build configuration adjustments and is NOT an official release.
+> For production use or latest updates, please visit the original repository.
+
 # OpenUtau Mobile
 [English](README.md) | [简体中文](README_zh.md)
 
