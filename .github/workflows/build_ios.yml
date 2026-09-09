@@ -13,6 +13,10 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
+      - name: 调试 - 确认 Entitlements.plist 是否存在
+        run: |
+          ls -la OpenUtauMobile/Platforms/iOS/
+
       - name: 设置 Xcode 26.5
         uses: maxim-lobanov/setup-xcode@v1
         with:
