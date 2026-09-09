@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
+
+      - name: 设置 Xcode 26.5
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '26.5'
         
       - name: 安装 .NET 9.0
         uses: actions/setup-dotnet@v4
