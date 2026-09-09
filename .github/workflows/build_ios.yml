@@ -51,8 +51,7 @@ jobs:
             -c Debug \
             -p:RuntimeIdentifier=ios-arm64 \
             -p:ArchiveOnBuild=true \
-            -p:EnableCodeSigning=false \
-            -p:CodeSignEntitlements=none
+            -p:EnableCodeSigning=false
           
       - name: 上传 IPA
         uses: actions/upload-artifact@v4
