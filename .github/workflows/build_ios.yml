@@ -34,11 +34,11 @@ jobs:
       - name: 创建空的 Entitlements.plist 文件
         run: |
           mkdir -p OpenUtauMobile/Platforms/iOS
-          echo '<?xml version="1.0" encoding="UTF-8"?>' > Platforms/iOS/Entitlements.plist
-          echo '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">' >> Platforms/iOS/Entitlements.plist
-          echo '<plist version="1.0">' >> Platforms/iOS/Entitlements.plist
-          echo '<dict/>' >> Platforms/iOS/Entitlements.plist
-          echo '</plist>' >> Platforms/iOS/Entitlements.plist
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > OpenUtauMobile/Platforms/iOS/Entitlements.plist
+          echo '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">' >> OpenUtauMobile/Platforms/iOS/Entitlements.plist
+          echo '<plist version="1.0">' >> OpenUtauMobile/Platforms/iOS/Entitlements.plist
+          echo '<dict/>' >> OpenUtauMobile/Platforms/iOS/Entitlements.plist
+          echo '</plist>' >> OpenUtauMobile/Platforms/iOS/Entitlements.plist
           
       - name: 编译未签名的 IPA
         run: |
